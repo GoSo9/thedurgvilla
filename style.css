@@ -20,6 +20,22 @@
     -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.3));
   }
 
+  .app-header {
+    color: white; 
+    font-size: max(min(5vw,50px),30px);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.app-header-tagline {
+    color: lightgrey;
+    font-size: max(min(4vw,20px),10px);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 10px;
+}
+
   .app-header-box {
     /* background-color: black; */
     background-image: linear-gradient(black,black, gray, black);
