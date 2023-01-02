@@ -67,3 +67,18 @@
   background-color: #04AA6D;
   color: white;
 }
+
+.home-image {
+  background-image: url('images/other_images/lakepichola_1.jpg');
+  background-repeat: no-repeat;
+  height: 80vh;
+  background-size: cover;
+}
+
+.home-image-main-line {
+  margin-left:'1vw';
+  color: 'white';
+  word-wrap: 'break-word';
+  width: '80vw';
+  font-size: 'min(8vw,80px)';
+}
