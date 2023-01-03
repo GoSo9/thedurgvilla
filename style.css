@@ -39,11 +39,15 @@
   .app-header-box {
     /* background-color: black; */
     background-image: linear-gradient(black,black, gray, black);
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 
 .topnav {
   background-color: #333;
   overflow: hidden;
+  padding-top: min(max(65px,10vw),90px);
 }
 
 /* Style the links inside the navigation bar */
@@ -76,9 +80,39 @@
 }
 
 .home-image-main-line {
-  margin-left:'1vw';
-  color: 'white';
-  word-wrap: 'break-word';
-  width: '80vw';
-  font-size: 'min(8vw,80px)';
+  margin-left: 1vw;
+  color: white;
+  word-wrap: break-word;
+  width: 80vw;
+  font-size: min(8vw,80px);
+  display: inline-block;
+}
+
+.home-image-sec-line {
+  color: #ccffff;
+  font-size: min(6vw,50px);
+}
+
+.footer {
+  align-items: center;
+  color: #04AA6D;
+}
+
+.nearbyattractions {
+  background: #000;
+}
+
+.text1 {
+  font-size: min(6vw,60px);
+  color: whitesmoke;
+  margin-left: 4vw;
+  word-wrap: break-word;
+  width: 80vw;
+  /* font-size: min(8vw,80px); */ 
+  display: inline-block;
+}
+
+.image-icons {
+  height: 5vw;
+  width: 5vw;
 }
