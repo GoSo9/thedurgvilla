@@ -116,3 +116,10 @@
   height: 5vw;
   width: 5vw;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
