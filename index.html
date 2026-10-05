@@ -1,117 +1,690 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Durg Villa</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="jquery.flipster.min.css">
-</head>
-<body>
-    <div class="app-header-box">
-        <div class="app-header">The Durg Villa</div>
-        <div class="app-header-tagline">A calm stay adjacent to Lake Pichola</div>
-    </div>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#gallary">Gallary</a>
-        <a href="#nearbyattractions">Nearby Attrations</a>
-        <a href="#howtoreach">How To Reach</a>
-        <a href="#booking">Booking</a>
-    </div>
-       
-    <div class="home-image">
-        <div style="height: 50px"></div>
-        <label class="home-image-main-line" >Welcome to the City of Lakes</label>
-        <div style="height: 20px"></div>
-        <label class="home-image-main-line home-image-sec-line">Calm stay at the heart of the city, surrounded by lakes</label>
-    </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Stay at The Durg Villa in Udaipur's old city, close to Lake Pichola, historic sights and local markets."
+    />
+    <meta name="theme-color" content="#f5f3ec" />
+    <title>The Durg Villa | A stay in the heart of Udaipur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="The Durg Villa home">
+        <span class="brand-mark" aria-hidden="true">D</span>
+        <span class="brand-copy"
+          ><span class="brand-name">The Durg Villa</span
+          ><span class="brand-place">Udaipur, Rajasthan</span></span
+        >
+        <div class="arrival-details">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#stay">The stay</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#explore">Explore Udaipur</a>
+        <a href="#location">Getting here</a>
+        <a class="nav-book" href="#booking"
+          >Plan your stay <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
 
-    <div class="nearbyattractions">
-        <br>
-        <label class="home-image-main-line">Gallary</label>
-    </div>
-
-    <div class="hero" id="gallary">
-        <div class="carousel">
-            <ul>
-                <li><img src="images/frontlook.jpg"></li>
-                <li><img src="images/101_1.jpg"></li>
-                <li><img src="images/101_2.jpg"></li>
-                <li><img src="images/101_3.jpg"></li>
-                <li><img src="images/101_4.jpg"></li>
-                <li><img src="images/101_5.jpg"></li>
-                <li><img src="images/102_1.jpg"></li>
-                <li><img src="images/102_2.jpg"></li>
-                <li><img src="images/102_3.jpg"></li>
-                <li><img src="images/102_4.jpg"></li>
-                <li><img src="images/102_5.jpg"></li>
-                <li><img src="images/201_1.jpg"></li>
-                <li><img src="images/201_2.jpg"></li>
-                <li><img src="images/201_3.jpg"></li>
-                <li><img src="images/201_4.jpg"></li>
-                <li><img src="images/201_5.jpg"></li>
-                <li><img src="images/202_1.jpg"></li>
-                <li><img src="images/202_2.jpg"></li>
-                <li><img src="images/202_3.jpg"></li>
-                <li><img src="images/202_4.jpg"></li>
-                <li><img src="images/rec_1.jpg"></li>
-                <li><img src="images/rec_3.jpg"></li>                
-            </ul>
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="images/other_images/lakepichola_1.jpg"
+          alt="City Palace glowing beside Lake Pichola at dusk"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow">
+            <span></span> A little closer to the lake
+          </p>
+          <h1 id="hero-title">Find your place<br />in <em>Udaipur.</em></h1>
+          <p class="hero-description">
+            A welcoming stay in the old city, with Lake Pichola and Udaipur's
+            timeless streets close by.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#stay"
+              >Discover the villa <span aria-hidden="true">↓</span></a
+            >
+            <a
+              class="hero-link"
+              href="https://wa.me/917976687358"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ask about a stay <span aria-hidden="true">↗</span></a
+            >
+          </div>
         </div>
-    </div>
+        <div class="hero-caption">
+          <span>24°34'57.6"N</span><span>Lake Pichola · Udaipur</span>
+        </div>
+        <a
+          class="hero-scroll"
+          href="#stay"
+          aria-label="Scroll to discover the stay"
+          ><span></span
+        ></a>
+      </section>
 
-    <div class="nearbyattractions" id="nearbyattractions">
-        <br><br><br>
-        <label class="home-image-main-line">Feel the tour around</label>
-        <br><br><br>
-        <label class = "text1">The Durg Villa is located at the heart of the city of lakes. It’s prime location on an Iceland surrounded by lakes makes your stay stunningly memorable.</label>
-        <br><br><br>
-        <label class = "text1">Everything is just a small walk away.</label>
-        <br><br><br>
-        <label class = "text1">Name any palace and you will find it at a walkable distance i.e. City Palace, Ambrai Ghat, Lake Pichola, Fateh Sagar lake, Gangour Ghat, Heritage temples, Shopping and Eateries.</label>
-        <br><br><br>
-    </div>
+      <section
+        class="intro section-wrap"
+        id="stay"
+        aria-labelledby="stay-title"
+      >
+        <div class="intro-heading">
+          <p class="eyebrow"><span></span> A stay in the old city</p>
+          <h2 id="stay-title">
+            The city is part<br />of the <em>experience.</em>
+          </h2>
+        </div>
+        <div class="intro-copy">
+          <p class="intro-lede">
+            At The Durg Villa, Udaipur is right outside your door.
+          </p>
+          <p>
+            Set in the heart of the old heritage city, the villa makes it easy
+            to spend your days wandering lakeside ghats, palaces, temples and
+            little local streets, then return to a calm, comfortable place to
+            unwind.
+          </p>
+          <a class="text-link" href="#explore"
+            >Get to know the neighbourhood <span aria-hidden="true">→</span></a
+          >
+        </div>
+        <div class="intro-footnote">
+          <span class="footnote-line"></span
+          ><span>Out the door, into Udaipur</span>
+        </div>
+      </section>
 
-    <div class="nearbyattractions" id="howtoreach">
-        <label class="home-image-main-line">How To Reach</label>
-        <br>
-        <label class = "text1">Address: The Durg Villa, Out Side Chand pole, Amba pole road, Jada Ganesh Ji Chowk, Udaipur, Rajasthan</label>  <br> <br>
-        <a href="https://www.google.com/maps/place/The+Durg+Villa/@24.5823928,73.677054,17z/data=!3m1!4b1!4m8!3m7!1s0x3967e56c5c715513:0xebfb33cefdefc73f!5m2!4m1!1i2!8m2!3d24.5823879!4d73.6792427" target="_blank">
-            <img src="images/other_images/durgvilla.jpg" class="center">
-        </a>
-        <br><br><br>
-        <label class = "text1">The Durg Villa is located in the heart of the old heritage city.</label> <br>
-        <label class = "text1">Cars can easily reach Durg Villa by follwing the below steps: </label> <br> <br>
-        <label class = "text1">In order to avoid all City Traffic, come to Chektak Circle, Udaipur (<a href="https://goo.gl/maps/3tRxye1MuwpsQRwJ6" target="_blank">Google Maps Location here</a>) and then follow below route:</label> <br> <br>
-        <label class = "text1"><a href="https://goo.gl/maps/Q3bLA6Xjwokwdrtg9" target="_blank"> Chetak Circle to The Durg Villa</a></label>        <br> <br>
-        <label class = "text1">It has two near by Pay and Park location make it very convinient.</label> <br> <br>
+      <section
+        class="gallery-section"
+        id="gallery"
+        aria-labelledby="gallery-title"
+      >
+        <div class="section-wrap gallery-wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span></span> A look around</p>
+              <h2 id="gallery-title">A closer look at <em>your stay.</em></h2>
+            </div>
+            <p class="section-note">Rooms, corners and glimpses of the city.</p>
+          </div>
+          <div class="gallery-grid" id="gallery-grid">
+            <button
+              class="gallery-item gallery-item-featured"
+              type="button"
+              aria-label="View the villa exterior"
+            >
+              <img
+                src="images/frontlook.jpg"
+                alt="The Durg Villa exterior"
+                loading="lazy"
+              /><span class="gallery-caption">The villa</span>
+            </button>
+            <button
+              class="gallery-item"
+              type="button"
+              aria-label="View room 101"
+            >
+              <img
+                src="images/101_1.jpg"
+                alt="Room 101, guest room interior"
+                loading="lazy"
+              /><span class="gallery-caption">Room 101</span>
+            </button>
+            <button
+              class="gallery-item"
+              type="button"
+              aria-label="View room 101"
+            >
+              <img
+                src="images/101_2.jpg"
+                alt="Room 101, guest room detail"
+                loading="lazy"
+              /><span class="gallery-caption">Room 101</span>
+            </button>
+            <button
+              class="gallery-item"
+              type="button"
+              aria-label="View room 102"
+            >
+              <img
+                src="images/102_1.jpg"
+                alt="Room 102 at The Durg Villa"
+                loading="lazy"
+              /><span class="gallery-caption">Room 102</span>
+            </button>
+            <button
+              class="gallery-item"
+              type="button"
+              aria-label="View room 102"
+            >
+              <img
+                src="images/102_2.jpg"
+                alt="Room 102, guest room detail"
+                loading="lazy"
+              /><span class="gallery-caption">Room 102</span>
+            </button>
+            <button
+              class="gallery-item"
+              type="button"
+              aria-label="View room 201"
+            >
+              <img
+                src="images/201_1.jpg"
+                alt="Room 201 at The Durg Villa"
+                loading="lazy"
+              /><span class="gallery-caption">Room 201</span>
+            </button>
+            <button
+              class="gallery-item"
+              type="button"
+              aria-label="View room 201"
+            >
+              <img
+                src="images/201_2.jpg"
+                alt="Room 201, guest room detail"
+                loading="lazy"
+              /><span class="gallery-caption">Room 201</span>
+            </button>
+            <button
+              class="gallery-item"
+              type="button"
+              aria-label="View room 202"
+            >
+              <img
+                src="images/202_1.jpg"
+                alt="Room 202 at The Durg Villa"
+                loading="lazy"
+              /><span class="gallery-caption">Room 202</span>
+            </button>
+            <button
+              class="gallery-item"
+              type="button"
+              aria-label="View the villa"
+            >
+              <img
+                src="images/Rec_1.jpg"
+                alt="A view inside The Durg Villa"
+                loading="lazy"
+              /><span class="gallery-caption">Around the villa</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 101"
+            >
+              <img
+                src="images/101_3.jpg"
+                alt="Room 101, another view"
+                loading="lazy"
+              /><span class="gallery-caption">Room 101</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 101"
+            >
+              <img
+                src="images/101_4.jpg"
+                alt="Room 101, another detail"
+                loading="lazy"
+              /><span class="gallery-caption">Room 101</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 101"
+            >
+              <img
+                src="images/101_5.jpg"
+                alt="Room 101, another detail"
+                loading="lazy"
+              /><span class="gallery-caption">Room 101</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 101"
+            >
+              <img
+                src="images/101_6.jpg"
+                alt="Room 101, another view"
+                loading="lazy"
+              /><span class="gallery-caption">Room 101</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 102"
+            >
+              <img
+                src="images/102_3.jpg"
+                alt="Room 102, another view"
+                loading="lazy"
+              /><span class="gallery-caption">Room 102</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 102"
+            >
+              <img
+                src="images/102_4.jpg"
+                alt="Room 102, another detail"
+                loading="lazy"
+              /><span class="gallery-caption">Room 102</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 102"
+            >
+              <img
+                src="images/102_5.jpg"
+                alt="Room 102, another view"
+                loading="lazy"
+              /><span class="gallery-caption">Room 102</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 201"
+            >
+              <img
+                src="images/201_3.jpg"
+                alt="Room 201, another view"
+                loading="lazy"
+              /><span class="gallery-caption">Room 201</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 201"
+            >
+              <img
+                src="images/201_4.jpg"
+                alt="Room 201, another detail"
+                loading="lazy"
+              /><span class="gallery-caption">Room 201</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 201"
+            >
+              <img
+                src="images/201_5.jpg"
+                alt="Room 201, another detail"
+                loading="lazy"
+              /><span class="gallery-caption">Room 201</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 201"
+            >
+              <img
+                src="images/201_6.jpg"
+                alt="Room 201, another view"
+                loading="lazy"
+              /><span class="gallery-caption">Room 201</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 201"
+            >
+              <img
+                src="images/201_7.jpg"
+                alt="Room 201, another detail"
+                loading="lazy"
+              /><span class="gallery-caption">Room 201</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 201"
+            >
+              <img
+                src="images/201_8.jpg"
+                alt="Room 201, another view"
+                loading="lazy"
+              /><span class="gallery-caption">Room 201</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 202"
+            >
+              <img
+                src="images/202_2.jpg"
+                alt="Room 202, another view"
+                loading="lazy"
+              /><span class="gallery-caption">Room 202</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 202"
+            >
+              <img
+                src="images/202_3.jpg"
+                alt="Room 202, another detail"
+                loading="lazy"
+              /><span class="gallery-caption">Room 202</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View room 202"
+            >
+              <img
+                src="images/202_4.jpg"
+                alt="Room 202, another view"
+                loading="lazy"
+              /><span class="gallery-caption">Room 202</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View the villa"
+            >
+              <img
+                src="images/Rec_2.jpg"
+                alt="Another view inside The Durg Villa"
+                loading="lazy"
+              /><span class="gallery-caption">Around the villa</span>
+            </button>
+            <button
+              class="gallery-item gallery-extra"
+              type="button"
+              aria-label="View the villa"
+            >
+              <img
+                src="images/Rec_3.jpg"
+                alt="Another detail at The Durg Villa"
+                loading="lazy"
+              /><span class="gallery-caption">Around the villa</span>
+            </button>
+          </div>
+          <button
+            class="gallery-more"
+            id="gallery-more"
+            type="button"
+            aria-expanded="false"
+          >
+            View all 27 photos <span aria-hidden="true">+</span>
+          </button>
+        </div>
+      </section>
 
-        <label class = "text1">Visitors reaching from Airport and Railway station can also contact us for direct pick up and drop.</label> <br> <br>
-        <label class = "text1">There is also enough local city transport is available for the Visitors who want to reach to us directly.</label> <br> <br>
-    </div>
+      <section
+        class="neighbourhood"
+        id="explore"
+        aria-labelledby="explore-title"
+      >
+        <div class="section-wrap neighbourhood-layout">
+          <div class="neighbourhood-copy">
+            <p class="eyebrow eyebrow-light">
+              <span></span> Step into the city
+            </p>
+            <h2 id="explore-title">
+              Udaipur, just<br />around the <em>corner.</em>
+            </h2>
+            <p class="neighbourhood-intro">
+              The villa's old-city setting puts much of Udaipur's heritage
+              within an easy stroll. Take your time and let the lanes lead you.
+            </p>
+            <a
+              class="text-link text-link-light"
+              href="https://www.google.com/maps/place/The+Durg+Villa/@24.5823928,73.677054,17z/data=!3m1!4b1!4m8!3m7!1s0x3967e56c5c715513:0xebfb33cefdefc73f!5m2!4m1!1i2!8m2!3d24.5823879!4d73.6792427"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Explore the location <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="sights-list" aria-label="Nearby attractions">
+            <div class="sight-row">
+              <span class="sight-number">01</span><span>City Palace</span
+              ><span class="sight-symbol" aria-hidden="true">↗</span>
+            </div>
+            <div class="sight-row">
+              <span class="sight-number">02</span
+              ><span>Lake Pichola &amp; Ambrai Ghat</span
+              ><span class="sight-symbol" aria-hidden="true">↗</span>
+            </div>
+            <div class="sight-row">
+              <span class="sight-number">03</span
+              ><span>Jagdish Temple &amp; heritage temples</span
+              ><span class="sight-symbol" aria-hidden="true">↗</span>
+            </div>
+            <div class="sight-row">
+              <span class="sight-number">04</span><span>Gangaur Ghat</span
+              ><span class="sight-symbol" aria-hidden="true">↗</span>
+            </div>
+            <div class="sight-row">
+              <span class="sight-number">05</span
+              ><span>Local shopping &amp; eateries</span
+              ><span class="sight-symbol" aria-hidden="true">↗</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="nearbyattractions" id="booking">
-        <label class="home-image-main-line">Bookings</label>
-        <label class = "text1">Rooms can be either booked on the online platforms</label> <br> <br>
-        <label class = "text1">In order to get discounts, you can also directly reach us on below numbers:</label> <br> <br>
-        <label class = "text1"> <img src="images/other_images/phone.jpg" class="image-icons"> Mobile: +91 797 668 7358</label> <br> <br>
-        <label class = "text1"> <img src="images/other_images/wasup.jpg" class="image-icons"> <a href="https://wa.me/917976687358" target="_blank">Whatsapp here</label> <br> <br>
-        <label class = "text1"> <img src="images/other_images/email.jpg" class="image-icons"> durgvilla@gmail.com</label> <br> <br>
-    </div>
-
-    <!-- <div class="footer">
-        <label>Address: Durg Villa, Amba Pole Road, Jada Ganesh Ji Chowk, Out Side Chandpole, Udaipur, Rajasthan, 313001</label>
-        <label>Contact: +91 79766 87358</label>
-    </div> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="jquery.flipster.min.js"></script>
+      <section
+        class="location section-wrap"
+        id="location"
+        aria-labelledby="location-title"
+      >
+        <div class="section-heading location-heading">
+          <div>
+            <p class="eyebrow"><span></span> Find your way</p>
+            <h2 id="location-title">Getting to <em>the villa.</em></h2>
+          </div>
+          <p class="section-note">
+            A little local guidance makes arrival easier.
+          </p>
+        </div>
+        <div class="location-layout">
+          <div class="map-panel">
+            <a
+              class="map-link"
+              href="https://www.google.com/maps/place/The+Durg+Villa/@24.5823928,73.677054,17z/data=!3m1!4b1!4m8!3m7!1s0x3967e56c5c715513:0xebfb33cefdefc73f!5m2!4m1!1i2!8m2!3d24.5823879!4d73.6792427"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open The Durg Villa in Google Maps"
+              ><img
+                src="images/other_images/durgvilla.jpg"
+                alt="Map showing The Durg Villa near Lake Pichola and Chandpole"
+              /><span class="map-open"
+                >Open map <span aria-hidden="true">↗</span></span
+              ></a
+            >
+            
+            <div class="address-block">
+              <p class="eyebrow"><span></span> Our address</p>
+              <address>
+                The Durg Villa<br />Outside Chandpole, Amba Pole Road<br />Jada
+                Ganesh Ji Chowk, Udaipur<br />Rajasthan, India
+              </address>
+            </div>
+            
+          </div>
+          
+          <div class="arrival-details">
+            
+            <article class="arrival-item">
+              <span class="arrival-index">01</span>
+              <div>
+                <h3>Arriving by car</h3>
+                <p>
+                  For an easier drive through the old city, head to Chetak
+                  Circle first and follow the route to the villa.
+                </p>
+                <a
+                  class="text-link"
+                  href="https://goo.gl/maps/Q3bLA6Xjwokwdrtg9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Chetak Circle to the villa
+                  <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            
+            <article class="arrival-item">
+              <span class="arrival-index">02</span>
+              <div>
+                <h3>Parking nearby</h3>
+                <p>
+                  There are two nearby paid parking locations. Contact us if you
+                  would like help planning your arrival.
+                </p>
+              </div>
+            </article>
+            
+            <article class="arrival-item">
+              <span class="arrival-index">03</span>
+              <div>
+                <h3>Airport &amp; railway station</h3>
+                <p>
+                  Direct pick-up and drop-off can be arranged. Get in touch with
+                  us ahead of your arrival.
+                </p>
+                <a class="text-link" href="tel:+917976687358"
+                  >Call +91 797 668 7358 <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+            
+          </div>
+          
+        </div>
+        
+      </section>
+      
+      <section class="booking" id="booking" aria-labelledby="booking-title">
+        
+        <div class="booking-inner section-wrap">
+          
+          <div>
+            <p class="eyebrow eyebrow-light">
+              <span></span> Your Udaipur stay starts here
+            </p>
+            <h2 id="booking-title">Make yourself<br />at <em>home.</em></h2>
+            <p class="booking-copy">
+              Ask us directly about room availability, rates and direct-booking
+              discounts. Rooms are also available on online booking platforms.
+            </p>
+          </div>
+          
+          <div class="booking-actions">
+            <a
+              class="button button-light"
+              href="https://wa.me/917976687358"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Message us on WhatsApp <span aria-hidden="true">↗</span></a
+            ><a class="booking-phone" href="tel:+917976687358"
+              >+91 797 668 7358</a
+            ><a class="booking-email" href="mailto:durgvilla@gmail.com"
+              >durgvilla@gmail.com</a
+            >
+          </div>
+          
+        </div>
+        
+        <div class="booking-stamp" aria-hidden="true">
+          UDAIPUR<br />RAJASTHAN
+        </div>
+        
+      </section>
+      
+    </main>
+    
+    <footer class="site-footer">
+      <a class="footer-brand" href="#home"
+        >The Durg Villa<span>Udaipur, Rajasthan</span></a
+      >
+      <p>A calm stay adjacent to Lake Pichola.</p>
+      <a class="back-top" href="#home">Back to top ↑</a
+      ><span class="copyright">© 2026 The Durg Villa</span>
+    </footer>
+    
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+      <button
+        class="lightbox-close"
+        type="button"
+        aria-label="Close photo viewer"
+      >
+        ×</button
+      ><img class="lightbox-image" src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </dialog>
+    
     <script>
-        $('.carousel').flipster({
-            style: 'carousel',
-            spacing: -0.3,
-        });
+              const menuToggle = document.querySelector('.menu-toggle');
+              const siteNav = document.querySelector('.site-nav');
+              const galleryMore = document.querySelector('#gallery-more');
+              const galleryItems = [...document.querySelectorAll('.gallery-item')];
+              const lightbox = document.querySelector('#lightbox');
+              const lightboxImage = lightbox.querySelector('.lightbox-image');
+              const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+      
+              menuToggle.addEventListener('click', () => {
+                  const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+                  menuToggle.setAttribute('aria-expanded', String(!isOpen));
+                  menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
+                  siteNav.classList.toggle('is-open', !isOpen);
+              });
+              siteNav.addEventListener('click', (event) => {
+                  if (event.target.closest('a')) {
+                      menuToggle.setAttribute('aria-expanded', 'false');
+                      menuToggle.setAttribute('aria-label', 'Open navigation');
+                      siteNav.classList.remove('is-open');
+                  }
+              });
+              galleryMore.addEventListener('click', () => {
+                  const isExpanded = galleryMore.getAttribute('aria-expanded') === 'true';
+                  galleryMore.setAttribute('aria-expanded', String(!isExpanded));
+                  galleryMore.innerHTML = isExpanded ? 'View all 27 photos <span aria-hidden="true">+</span>' : 'Show fewer photos <span aria-hidden="true">−</span>';
+                  document.querySelectorAll('.gallery-extra').forEach((item) => item.classList.toggle('is-visible', !isExpanded));
+              });
+              galleryItems.forEach((item) => item.addEventListener('click', () => {
+                  const image = item.querySelector('img');
+                  lightboxImage.src = image.src;
+                  lightboxImage.alt = image.alt;
+                  lightboxCaption.textContent = item.querySelector('.gallery-caption').textContent;
+                  lightbox.showModal();
+              }));
+              lightbox.querySelector('.lightbox-close').addEventListener('click', () => lightbox.close());
+              lightbox.addEventListener('click', (event) => { if (event.target === lightbox) lightbox.close(); });
+      
     </script>
-</body>
+    
+  </body>
+  
 </html>
